@@ -58,7 +58,7 @@ const accordionTemplate = (data) =>
     `<div class="c-accordion">
         <span class="c-accordion__title">${data.title}</span>
         <ul class="c-accordion__list">
-            ${dummyData.list.map((el) => accordionItemTemplate(el)).join("")}
+            ${dummyData.list.length ? dummyData.list.map((el) => accordionItemTemplate(el)).join("") : "<li>no content</li>"}
         </ul>
     </div>`;
 
