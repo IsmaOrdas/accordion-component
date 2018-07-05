@@ -52,7 +52,8 @@ main {
 .c-accordion__label {
   cursor: pointer;
   display: block;
-  position: relative; }
+  position: relative;
+  padding-left: 5px; }
 
 .c-accordion__item-title {
   color: #517489;
