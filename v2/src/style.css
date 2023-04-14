@@ -1,0 +1,96 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+:root {
+  --white: #fff;
+  --borderColor: #dfe3e6;
+  --itemColor: #517489;
+}
+
+#app {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 80px;
+}
+
+.logo:first-of-type {
+  margin-right: 2rem;
+}
+
+.accordion-placeholder {
+  position: relative;
+  width: 300px;
+}
+    
+.c-accordion {
+  background-color: var(--white);
+  border: solid 1px var(--borderColor);
+  border-radius: 5px;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  width: 300px;
+}
+
+.c-accordion__item {
+  border-bottom: solid 1px var(--borderColor);
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  transition: height .3s ease;
+}
+
+.c-accordion__item:last-of-type {
+  border-bottom: 0;
+}
+
+.c-accordion__item--open .c-accordion__chevron {
+  transform: rotate(90deg);
+}
+
+.c-accordion__label {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.c-accordion__item-title {
+  color: var(--itemColor);
+  font-size: 16px;
+  font-weight: bold;
+  pointer-events: none;
+  text-transform: capitalize;
+}
+  
+.c-accordion__copy {
+  font-size: 14px;
+  line-height: 1.43;
+  padding: 1rem;
+  margin: 0;
+}
