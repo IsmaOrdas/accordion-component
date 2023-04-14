@@ -1,5 +1,5 @@
 import './style.css'
-import Accordion from "./accordion";
+import Accordion from "./components/accordion";
 
 document.addEventListener("DOMContentLoaded", () => {
   const accordionPlaceholder = document.querySelector(".accordion-placeholder");
